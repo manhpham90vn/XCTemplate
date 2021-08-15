@@ -18,7 +18,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interf
     }
 
     deinit {
-        LogInfo("\(type(of: self)) Deinit")
+        LogInfo("\(Swift.type(of: self)) Deinit")
     }
 
 }

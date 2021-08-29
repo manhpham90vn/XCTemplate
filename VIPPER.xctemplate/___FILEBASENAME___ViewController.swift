@@ -21,8 +21,6 @@ final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
 
     override func bindDatas() {
         super.bindDatas()
-        
-        presenter.bind(isLoading: isLoading)
     }
     
 }

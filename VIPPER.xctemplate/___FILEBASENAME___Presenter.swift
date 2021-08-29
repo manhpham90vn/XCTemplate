@@ -12,7 +12,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interf
     let router: ___VARIABLE_productName___RouterInterface
     let interactor: ___VARIABLE_productName___InteractorInterface
 
-    let activityIndicator = ActivityIndicator()
+    let activityIndicator = ActivityIndicator.shared
     let trigger = PublishRelay<Void>()
 
     init(view: ___VARIABLE_productName___ViewInterface,

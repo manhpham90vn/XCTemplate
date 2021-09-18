@@ -4,15 +4,18 @@ import UIKit
 
 final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
     
-    var presenter: ___VARIABLE_productName___Presenter!
+    @Injected var presenter: ___VARIABLE_productName___PresenterInterface
 
     deinit {
-        LogInfo("\(Swift.type(of: self)) Deinit")
+        if Configs.shared.loggingDeinitEnabled {
+            LogInfo("\(Swift.type(of: self)) Deinit")
+        }
         LeakDetector.instance.expectDeallocate(object: presenter as AnyObject)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad(view: self)
     }
 
     override func setupUI() {

@@ -15,7 +15,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad(view: self)
+        presenter.inject(view: self)
     }
 
     override func setupUI() {

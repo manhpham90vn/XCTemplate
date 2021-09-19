@@ -1,4 +1,3 @@
 //___FILEHEADER___
 
-protocol ___FILEBASENAMEASIDENTIFIER___Interface: BaseView {
-}
+protocol ___FILEBASENAMEASIDENTIFIER___Interface: BaseView {}

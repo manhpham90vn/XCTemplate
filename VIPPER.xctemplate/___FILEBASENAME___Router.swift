@@ -23,3 +23,10 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interf
 
 }
 
+extension ___FILEBASENAMEASIDENTIFIER___: ResolverRegistering {
+    static func registerAllServices() {
+        Resolver.register { ___VARIABLE_productName___Interactor() as ___VARIABLE_productName___InteractorInterface }
+        Resolver.register { ___VARIABLE_productName___Router() as ___VARIABLE_productName___RouterInterface }
+        Resolver.register { ___VARIABLE_productName___Presenter() as ___VARIABLE_productName___PresenterInterface }
+    }
+}

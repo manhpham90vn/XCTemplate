@@ -8,13 +8,12 @@ protocol ___FILEBASENAMEASIDENTIFIER___Interface {
     func inject(view: ___VARIABLE_productName___ViewInterface)
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interface, HasActivityIndicator, HasDisposeBag {
+final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interface, HasDisposeBag, HasTrigger {
 
     weak var view: ___VARIABLE_productName___ViewInterface?
     @Injected var router: ___VARIABLE_productName___RouterInterface
     @Injected var interactor: ___VARIABLE_productName___InteractorInterface
 
-    let activityIndicator = ActivityIndicator.shared
     let trigger = PublishRelay<Void>()
 
     func inject(view: ___VARIABLE_productName___ViewInterface) {

@@ -1,6 +1,7 @@
 //___FILEHEADER___
 
 import UIKit
+import Resolver
 
 protocol ___FILEBASENAMEASIDENTIFIER___Interface {
     var view: ___VARIABLE_productName___ViewInterface? { get }

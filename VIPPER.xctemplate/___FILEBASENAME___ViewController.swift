@@ -1,6 +1,7 @@
 //___FILEHEADER___
 
 import UIKit
+import Resolver
 
 final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
     

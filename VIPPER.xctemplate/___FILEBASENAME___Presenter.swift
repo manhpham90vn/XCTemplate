@@ -3,6 +3,7 @@
 import RxSwift
 import RxCocoa
 import MPInjector
+import NSObject_Rx
 
 protocol ___FILEBASENAMEASIDENTIFIER___Interface {
     var view: ___VARIABLE_productName___ViewInterface? { get }

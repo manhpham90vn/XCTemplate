@@ -1,11 +1,11 @@
 //___FILEHEADER___
 
 import UIKit
-import Resolver
+import MPInjector
 
 final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
     
-    @Injected var presenter: ___VARIABLE_productName___PresenterInterface
+    @Inject var presenter: ___VARIABLE_productName___PresenterInterface
 
     deinit {
         if Configs.shared.loggingDeinitEnabled {

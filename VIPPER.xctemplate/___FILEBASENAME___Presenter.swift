@@ -2,7 +2,7 @@
 
 import RxSwift
 import RxCocoa
-import NSObject_Rx
+import MPInjector
 import Resolver
 
 protocol ___FILEBASENAMEASIDENTIFIER___Interface {
@@ -16,8 +16,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___Interface {
 final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Interface, HasDisposeBag, HasTrigger {
 
     weak var view: ___VARIABLE_productName___ViewInterface?
-    @Injected var router: ___VARIABLE_productName___RouterInterface
-    @Injected var interactor: ___VARIABLE_productName___InteractorInterface
+    @Inject var router: ___VARIABLE_productName___RouterInterface
+    @Inject var interactor: ___VARIABLE_productName___InteractorInterface
 
     let trigger = PublishRelay<Void>()
 

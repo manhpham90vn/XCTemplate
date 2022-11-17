@@ -7,6 +7,10 @@ final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
     
     @Inject var presenter: ___VARIABLE_productName___PresenterInterface
 
+    override var screenType: ScreenType {
+        .none
+    }
+
     deinit {
         if Configs.shared.loggingDeinitEnabled {
             LogInfo("\(Swift.type(of: self)) Deinit")
@@ -16,7 +20,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.inject(view: self)
+        presenter.inject(view: self, screenType: screenType)
     }
 
     override func setupUI() {
